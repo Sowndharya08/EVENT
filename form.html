@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Event</title>
+  <link rel="stylesheet" href="form1.css">
+</head>
+
+<body>
+  <h1>
+    <center>Create Your Event</center>
+  </h1>
+  <div class="container">
+    <form id="eventForm">
+      <div class="form-group">
+        <label for="organiserName">Organiser Name:</label>
+        <input type="text" id="organiserName" required>
+      </div>
+      <div class="form-group">
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" required>
+      </div>
+      <div class="form-group">
+        <label for="eventType">Event Type:</label>
+        <input type="text" id="eventType" required>
+      </div>
+      <div class="form-group">
+        <label for="eventMode">Event Mode:</label>
+        <select id="eventMode" required>
+          <option value="online">Online</option>
+          <option value="offline">Offline</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="eventStartDate">Event Start Date:</label>
+        <input type="date" id="eventStartDate" required>
+      </div>
+      <div class="form-group">
+        <label for="eventEndDate">Event End Date:</label>
+        <input type="date" id="eventEndDate" required>
+      </div>
+      <div class="form-group">
+        <label for="eventStartTime">Event Start Time:</label>
+        <input type="time" id="eventStartTime" required>
+      </div>
+      <div class="form-group">
+        <label for="eventLocation">Event Location:</label>
+        <input type="text" id="eventLocation" required>
+      </div>
+      <div class="form-group">
+        <label for="eventVenue">Event Venue:</label>
+        <input type="text" id="eventVenue" required>
+      </div>
+      <div class="form-group">
+        <label for="eventDescription">Event Description:</label>
+        <textarea id="eventDescription" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="sellTickets">Sell Tickets?</label>
+        <input type="checkbox" id="sellTickets">
+      </div>
+      <div id="paymentDetails" class="form-group hidden">
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod">
+          <option value="creditCard">Credit Card</option>
+          <option value="paypal">PayPal</option>
+        </select>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber">
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv">
+      </div>
+      <button type="submit">Create Event</button>
+    </form>
+  </div>
+
+  <script src="forms.js"></script>
+</body>
+
+</html>

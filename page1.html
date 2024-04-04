@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizer or Attendee</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background: linear-gradient(145deg, #007bff, #0056b3);
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      box-shadow: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 10px 10px 20px #bfc5d2, -10px -10px 20px #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>
+      Are You An Attendee or Organizer?
+    </h2>
+    <div class="btn-container">
+      <button class="btn" onclick="location.href='form.html';">Organizer</button>
+      <button class="btn" onclick="location.href='organizer.html';">Attendee</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
